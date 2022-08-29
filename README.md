@@ -1,6 +1,6 @@
 # Repository for home task EPAM DevOps
 
-## Autor 
+## Author 
 
 ## Shved Aleksey
 
