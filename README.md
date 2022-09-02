@@ -88,3 +88,58 @@ Self-check:
 
 ### Commands
 - touch script06.sh
+
+### 7 Conditional Operations
+ 
+Goals:
+  - write conditional statements
+
+Tasks:
+  - create a script file in your home directory that does the following:
+  - checks if 1st and 2nd string arguments are equal and outputs the exit code of this operation
+  - checks if 1st string argument is longer than 2nd string argument and outputs the exit code of this operation
+  - checks if variable TEST is present in the environment (has non-zero length) and outputs the exit code of this operation
+  - checks if 3rd and 4th integer arguments are not equal and outputs the exit code of this operation
+  - checks if 3rd integer argument is greater or equal to 4th integer argument and outputs the exit code of this operation
+  
+  - run your script with "hi world 7 9" arguments
+  - add TEST environment variable with "123" value
+  - re-run the script with "hello hello 10 7" arguments
+
+Self-check:
+  - first script run should return the following values:
+  1 1 1 0 1
+  - second script run should return the following values:
+  0 1 1 0 0
+  
+### Answer in file script07.sh
+
+### 8 If Statement
+Tasks:
+- create a script called odd_even.sh that does the following:
+  - takes one argument
+  - if the number of letters in the argument is odd, outputs the message "Odd", else if the number of letters is even - outputs "Even"
+  
+- run the script first with "odd" argument, then with "even" argument
+- create a script called my_script.sh that does the following:
+  - takes any number of arguments
+  - if there are less than 2 arguments, output the values of these arguments
+  - if there are more than 2 but less than 4 arguments, output only the last argument else output "Invalid number of arguments" message
+- run my_script.sh with the following arguments:
+  - hello
+  - hello world
+  - pie is lie
+  - keep calm and procrastinate
+
+Self-check:
+- odd_even.sh script outputs:
+  - first run: Odd
+  - second run: Even
+- my_script.sh script outputs:
+  - hello
+  - Invalid number of arguments
+  - lie
+  - Invalid number of arguments
+
+### Answer in file script08.sh
+ 
