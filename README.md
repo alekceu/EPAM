@@ -15,17 +15,17 @@ Tasks:
 - in your home folder create a file named vars 
 - add a variable called FILE with value new_file to vars file 
 - in your home folder create a script that does the following:
-  -- has NAME variable equal to your Name_Surname
-  -- sources vars file
-  -- creates a folder with name from NAME variable
-  -- creates a file in created folder with name from FILE variable
-  -- lists the contents of home folder and created folder
+  - has NAME variable equal to your Name_Surname
+  - sources vars file
+  - creates a folder with name from NAME variable
+  - creates a file in created folder with name from FILE variable
+  - lists the contents of home folder and created folder
 - execute the script
 
 Self-check:
 - script creates Name_Surname folder, new_file file in the folder and returns the following output:
-  - - Name_Surname script.sh vars
-  - - new_file
+  - Name_Surname script.sh vars
+  - new_file
 
 Commands:
  - touch vars
@@ -50,7 +50,7 @@ Tasks:
 
 Self-check:
 - my_script.sh command gives the following output:
-  -- Surname
+  -Surname
 
 Commands:
  - mkdir homework5
@@ -141,5 +141,181 @@ Self-check:
   - lie
   - Invalid number of arguments
 
-### Answer in file script08.sh
+### Answer in file script08.sh and odd_even_08.sh
+
+### 9 Case Statement 
+
+Tasks:
+- create a script called my_service.sh which does the following:
+  - accepts start, stop, restart arguments:
+  - start - outputs "Service started" message and sleeps for 9999
+  - stop - gets the PID of my_service.sh process and terminates it, then outputs "Service stopped" message
+  - restart - stops and then starts the service
+  - any other argument outputs script usage information
+- add your service to PATH
+- run your script with start and restart arguments in background
+- run your script with stop and help arguments
+
+Self-check:
+- script executions retrun the following:
+  - start: 
+[1] 45043
+Service is started
+  - stop:
+Service is stopped
+[2]  + 44996 terminated  ./my_script.sh start
+  - restart:
+[1] 45863
+Service is stopped
+Service is started
+  - help:
+usage: my_service.sh [start|stop|restart]
+
+### Answer in file script09.sh
+
+### 10 Pipelines 
+
+Tasks:
+- write a one line command using || and && operators that does the following:
+  - creates a folder named Name_Surname 
+  - if folder creation was successful, creates a file inside, called my_file
+  - if file creation was successfull, writes "Hello" into the file
+  - if previous operation was successful, lists the contents of the file
+  - if any of the operations fail, print "Something went wrong"
+- run the command two times
+- write a command that outputs only users that have /usr/bin/false shell from /etc/passwd file and changes the shell to /bin/bash
+
+### Commands
+ - (mkdir alekceu_shved && touch ./alekceu_shved/my_file && echo "Hello" > ./alekceu_shved/my_file && cat ./alekceu_shved/my_file ) || echo "Something went wrong"
+ - cat /etc/passwd | grep /sbin/nologin | sed "s/sbin\/nologin/bin\/bash/g"
  
+### 10 For loop
+
+Tasks:
+- create a script that does the following:
+  - accepts any number of int arguments
+  - outputs the sum of all arguments
+  - outputs the number of arguments
+  - outputs the average of all arguments
+- execute your script with the following arguments 1 2 3 4 5
+
+Self-check:
+- your script outputs the following:
+
+Sum: 15
+Args number: 5
+Result: 3
+
+### Answer in file script11.sh
+
+### 12 While loop
+
+Tasks:
+- create console.sh script that does the following:
+  - implements console functionality 
+  - infinite loop that reads user input on each iteration
+  - supports commands:
+    - ls [dir] - lists the contents of specified directory
+    - pwd - shows the path to current directory
+    - hi - outputs "Hello <name of the current user>" 
+    - exit - ends the script
+- run your script and test implemented commands
+
+### Answer in file script12.sh
+
+### 13 Until loop
+
+Tasks:
+- create a script that does the following:
+  - reads a filename from user input
+  - combines specifyed file with itself until it reaches a size greater than 1024 KB
+  - create a file using head -c 4KB /dev/urandom > file.txt command
+- execute your script passing the file you've just created
+
+Self-check:
+- script returns the following output:
+
+Filesize: 8
+Filesize: 16
+Filesize: 32
+Filesize: 64
+Filesize: 128
+Filesize: 256
+Filesize: 504
+Filesize: 1004
+Filesize: 2004
+
+### Answer in file script13.sh
+
+### 14 Pipelines
+
+### Answer commands
+- (mkdir alekceu_shved && touch ./alekceu_shved/my_file && echo "Hello" > ./alekceu_shved/my_file && cat ./alekceu_shved/my_file ) || echo "Something went wrong"
+- cat /etc/passwd | grep /sbin/nologin | sed "s/sbin\/nologin/bin\/bash/g"
+
+### 15 Positional arguments
+
+Tasks:
+- create a script that does the following:
+- accepts any number of arguments
+- prints all arguments in the following format "Arg1: <arg1 value>", "Arg2: <arg2 value>"
+- adds the value of the next argument to the previous one and prints it out (for the last argument add the value of the first one)
+- run the script with 7 1 5 7 4 3 6 arguments
+
+Self-check:
+- script run returns the following results:
+  - Arg1: 7
+  - Arg2: 1
+  - Arg3: 5
+  - Arg4: 7
+  - Arg5: 4
+  - Arg6: 3
+  - Arg7: 6
+  - 8 6 12 11 7 9 13
+
+### Answer in file script15.sh
+
+### 16 Input Output
+Tasks:
+- create a script that does the following:
+  - asks the user to input a filename
+  - writes the following poem to the file specified by user:
+  
+An old silent pond...
+A frog jumps into the pond,
+splash! Silence again.
+Autumn moonlight-
+a worm digs silently
+into the chestnut.
+In the twilight rain
+these brilliant-hued hibiscus -
+A lovely sunset.
+
+  - outputs the poem to the terminal
+  - outputs the message "Task finished" to stderr
+- run your script, specify output as the file to write the poem to, redirect stdout to /dev/null, redirect stderr to stderr file
+
+Self-check:
+- script returns no output
+- cat output command returns the poem
+- cat stderr command returns: Task finished
+
+### Answer in file script16.sh предварительно нужно создать файл с содержимым поемы poem.txt
+
+### 17 Functions
+
+Goals:
+- learn to use functions
+- learn to use nested functions
+
+Tasks:
+- create a script that does the following:
+  - has a function that multiplies the argument passed to it by itself
+  - has a second function that passes each argument passed to the script to the first function and increases the result by 1 and outputs to the console
+- run your function with the following arguments: 5 6 1 3 9
+
+Self-check:
+- function returns the following output:
+26 37 2 10 82
+
+### Answer in file script17.sh
