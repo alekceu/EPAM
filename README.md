@@ -4,4 +4,4 @@
 
 ## Shved Aleksey
 
-## To see hometask you need to switch to the right branch
+## To see hometask, you need to switch to the correct branch!
