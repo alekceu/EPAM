@@ -1,10 +1,24 @@
 # Repository for home task EPAM DevOps Essentials
-
 ## Author 
-
 ## Shved Aleksey
 
-### 4 Variables
+##List of task
+  - [4 Variables](#task4)
+  - [5 Environment Variable](#task5)
+  - [6 Special variables](#task6)
+  - [7 Conditional Operations](#task7)
+  - [8 If Statement](#task8)
+  - [9 Case Statement](#task9)
+  - [10 Pipelines ](#task10)
+  - [10 For loop](#task11)
+  - [12 While loop](#task12)
+  - [13 Until loop](#task13)
+  - [14 Pipelines](#task14)
+  - [15 Positional arguments](#task15)
+  - [16 Input Output](#task16)
+  - [17 Functions](#task17)
+
+### 4 Variables <a name="task4"></a>
 
 Tasks
 
@@ -34,7 +48,7 @@ Commands:
  - chmod +x script4.sh
  - ./script4.sh
 
-### 5 Environment Variable
+### 5 Environment Variable <a name="task5"></a>
 
 Goals:
 - setting and unsetting environment variables
@@ -61,7 +75,7 @@ Commands:
  - PATH="$PATH:/home/shvedav86/homework5"
  - ./script05.sh
  
- ### 6 Special variables
+ ### 6 Special variables <a name="task6"></a>
  
 Goals:
 	- using reserved variables
@@ -89,7 +103,7 @@ Self-check:
 ### Commands
 - touch script06.sh
 
-### 7 Conditional Operations
+### 7 Conditional Operations<a name="task7"></a>
  
 Goals:
   - write conditional statements
