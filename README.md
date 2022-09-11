@@ -1,8 +1,12 @@
 # Repository for home task EPAM DevOps Essentials
+
 ## Author 
+
 ## Shved Aleksey
 
-##List of task
+
+## List of task
+
   - [4 Variables](#task4)
   - [5 Environment Variable](#task5)
   - [6 Special variables](#task6)
@@ -103,8 +107,8 @@ Self-check:
 ### Commands
 - touch script06.sh
 
-### 7 Conditional Operations<a name="task7"></a>
- 
+### 7 Conditional Operations <a name="task7"></a>
+
 Goals:
   - write conditional statements
 
@@ -128,7 +132,7 @@ Self-check:
   
 ### Answer in file script07.sh
 
-### 8 If Statement
+### 8 If Statement <a name="task8"></a>
 Tasks:
 - create a script called odd_even.sh that does the following:
   - takes one argument
@@ -157,7 +161,7 @@ Self-check:
 
 ### Answer in file script08.sh and odd_even_08.sh
 
-### 9 Case Statement 
+### 9 Case Statement <a name="task9"></a>
 
 Tasks:
 - create a script called my_service.sh which does the following:
@@ -187,7 +191,7 @@ usage: my_service.sh [start|stop|restart]
 
 ### Answer in file script09.sh
 
-### 10 Pipelines 
+### 10 Pipelines <a name="task10"></a>
 
 Tasks:
 - write a one line command using || and && operators that does the following:
@@ -203,7 +207,7 @@ Tasks:
  - (mkdir alekceu_shved && touch ./alekceu_shved/my_file && echo "Hello" > ./alekceu_shved/my_file && cat ./alekceu_shved/my_file ) || echo "Something went wrong"
  - cat /etc/passwd | grep /sbin/nologin | sed "s/sbin\/nologin/bin\/bash/g"
  
-### 10 For loop
+### 10 For loop <a name="task11"></a>
 
 Tasks:
 - create a script that does the following:
@@ -222,7 +226,7 @@ Result: 3
 
 ### Answer in file script11.sh
 
-### 12 While loop
+### 12 While loop <a name="task12"></a>
 
 Tasks:
 - create console.sh script that does the following:
@@ -237,7 +241,7 @@ Tasks:
 
 ### Answer in file script12.sh
 
-### 13 Until loop
+### 13 Until loop <a name="task13"></a>
 
 Tasks:
 - create a script that does the following:
@@ -261,13 +265,13 @@ Filesize: 2004
 
 ### Answer in file script13.sh
 
-### 14 Pipelines
+### 14 Pipelines <a name="task14"></a>
 
 ### Answer commands
 - (mkdir alekceu_shved && touch ./alekceu_shved/my_file && echo "Hello" > ./alekceu_shved/my_file && cat ./alekceu_shved/my_file ) || echo "Something went wrong"
 - cat /etc/passwd | grep /sbin/nologin | sed "s/sbin\/nologin/bin\/bash/g"
 
-### 15 Positional arguments
+### 15 Positional arguments <a name="task15"></a>
 
 Tasks:
 - create a script that does the following:
@@ -289,7 +293,7 @@ Self-check:
 
 ### Answer in file script15.sh
 
-### 16 Input Output
+### 16 Input Output <a name="task16"></a>
 Tasks:
 - create a script that does the following:
   - asks the user to input a filename
@@ -316,7 +320,7 @@ Self-check:
 
 ### Answer in file script16.sh предварительно нужно создать файл с содержимым поемы poem.txt
 
-### 17 Functions
+### 17 Functions <a name="task17"></a>
 
 Goals:
 - learn to use functions
