@@ -10,7 +10,7 @@ done
 
 4. Unicat ? Multicast and Broadcast??? В чем разница?
 
-5. Rebase - поиггратся  свариантами
+5. Rebase - поиггратся  с вариантами
 
 
 Answer

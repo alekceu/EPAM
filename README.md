@@ -1,4 +1,4 @@
-# Repository for home task EPAM DevOps Essentials
+﻿# Repository for home task EPAM DevOps Essentials
 
 ## Author 
 
@@ -21,6 +21,7 @@
   - [15 Positional arguments](#task15)
   - [16 Input Output](#task16)
   - [17 Functions](#task17)
+  - [18 Python](#ptask1)
 
 ### 4 Variables <a name="task4"></a>
 
@@ -337,3 +338,9 @@ Self-check:
 26 37 2 10 82
 
 ### Answer in file script17.sh
+
+### 18 Python <a name="ptask1"></a>
+
+All task are placed in python directory. Funny game - find_out.py. To run you need
+- install python
+- run command "python find_out.py"
