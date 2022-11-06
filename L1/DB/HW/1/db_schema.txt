@@ -1,0 +1,49 @@
+CREATE TABLE director
+(
+  id              INT NOT NULL AUTO_INCREMENT,
+  name            VARCHAR(150) NOT NULL,
+  job_title       VARCHAR(150),	
+  PRIMARY KEY     (id)
+);
+
+CREATE TABLE staff
+(
+  id              INT NOT NULL AUTO_INCREMENT,
+  name            VARCHAR(150) NOT NULL,
+  job_title       VARCHAR(150),	
+  PRIMARY KEY     (id)
+);
+
+CREATE TABLE documents
+(
+  id              INT NOT NULL AUTO_INCREMENT,
+  name            VARCHAR(150) NOT NULL,
+  id_staff        INT NOT NULL,
+  time_create     TIMESTAMP NOT NULL,
+  id_director	  INT NULL,
+  time_approve    TIMESTAMP NULL,	
+  PRIMARY KEY     (id)
+);
+
+ALTER TABLE documents ADD CONSTRAINT fk_id_staff FOREIGN KEY (id_staff) REFERENCES staff(id);
+ALTER TABLE documents ADD CONSTRAINT fk_id_dir FOREIGN KEY (id_director) REFERENCES director(id);
+
+insert into `director` VALUES ("1","Петров Василий Васильевич","Директор по маркетингу");
+insert into `director` VALUES ("2","Петров Геннадий Васильевич","Директор по производству");
+insert into `director` VALUES ("3","Иванов Василий Васильевич","Директор по маркетингу 2");
+
+insert into `staff` VALUES ("1","Георгиев Василий Васильевич","Менеджер по закупкам");
+insert into `staff` VALUES ("2","Петров Семен Васильевич","Менеджер по подбору персонала");
+insert into `staff` VALUES ("3","Иванов Иван Васильевич","Менеджер по закупкам 1");
+insert into `staff` VALUES ("4","Романов Василий Васильевич","Менеджер по закупкам 3");
+insert into `staff` VALUES ("5","Сидоров Семен Васильевич","Менеджер по подбору персонала 5");
+insert into `staff` VALUES ("6","Георгиев Иван Васильевич","Менеджер по закупкам 6");
+
+insert into `documents` VALUES ("1","Закупка товата","1",NOW(),NULL,NULL);
+insert into `documents` VALUES ("2","Закупка товата 1","2",NOW(),NULL,NULL);
+insert into `documents` VALUES ("3","Оплата товара","2",NOW(),NULL,NULL);
+insert into `documents` VALUES ("4","Закупка товата 3","3",NOW(),NULL,NULL);
+insert into `documents` VALUES ("5","Закупка товата","2",NOW(),NULL,NULL);
+insert into `documents` VALUES ("6","Закупка товата 1","4",NOW(),NULL,NULL);
+insert into `documents` VALUES ("7","Оплата товара","6",NOW(),NULL,NULL);
+insert into `documents` VALUES ("8","Закупка товата 3","4",NOW(),NULL,NULL);
